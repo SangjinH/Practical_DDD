@@ -1,4 +1,4 @@
-package com.practicalddd.cargotracker.booking.domain.model.aggregate;
+package com.practicalddd.cargotracker.booking.domain.model.aggregates;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

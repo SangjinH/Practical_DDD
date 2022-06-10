@@ -38,5 +38,5 @@ public class Leg {
         this.unloadLocation = unloadLocation;
         this.loadTime = loadTime;
         this.unloadTime = unloadTime;
-
     }
+}

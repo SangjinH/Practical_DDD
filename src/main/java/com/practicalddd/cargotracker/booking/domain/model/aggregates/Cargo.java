@@ -39,7 +39,7 @@ public class Cargo implements Serializable {
 
     /**
      * 생성자를 만드는데, Command Handler를 통해서 다른 Bounded Context에도 명령을 전달하고,
-     * 초기 설정을 하는 생성자
+     * Cargo 를 예약하는 Event를 발생시킨다.
      */
     public Cargo(BookCargoCommand bookCargoCommand) {
 
@@ -57,10 +57,7 @@ public class Cargo implements Serializable {
     }
 
 
-    // Business Methods
-    public void deriveDeliveryProgress() {
-        // Implementation goes here
-    }
+    // Business Method
 
     public void assignToRoute(CargoItinerary cargoItinerary) {
         this.itinerary = cargoItinerary;

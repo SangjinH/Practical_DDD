@@ -1,4 +1,4 @@
-package com.practicalddd.cargotracker.booking.domain.infrastructure.repositories.jpa;
+package com.practicalddd.cargotracker.booking.infrastructure.repositories.jpa;
 
 import com.practicalddd.cargotracker.booking.domain.model.aggregates.BookingId;
 import com.practicalddd.cargotracker.booking.domain.model.aggregates.Cargo;

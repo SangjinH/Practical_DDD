@@ -12,12 +12,18 @@ public class Voyage {
     @Column(name = "voyage_number")
     private String voyageNumber;
 
-    public Voyage(){}
+    public Voyage() {
+    }
 
-    public Voyage(String voyageId){
+    public Voyage(String voyageId) {
         this.voyageNumber = voyageNumber;
     }
 
-    public String getVoyageId(){return this.voyageNumber;}
+    public String getVoyageId() {
+        return this.voyageNumber;
+    }
 
-    public void setVoyageId(String voyageId){this.voyageNumber = voyageNumber;}
+    public void setVoyageId(String voyageId) {
+        this.voyageNumber = voyageNumber;
+    }
+}

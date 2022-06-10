@@ -17,10 +17,11 @@ public class Delivery {
     //Enumerated Types - Routing Status / Transport Status of the Cargo
     @Enumerated(EnumType.STRING)
     @Column(name = "routing_status")
-    private RoutingStatus routingStatus; //Routing Status of the Cargo
+    private RoutingStatus routingStatus; //[NOT_ROUTED, ROUTED, MISROUTED]
     @Enumerated(EnumType.STRING)
     @Column(name = "transport_status")
-    private TransportStatus transportStatus; //Transport Status of the Cargo
+    private TransportStatus transportStatus; //[NOT_RECEIVED, IN_PORT, ONBOARD_CARRIER, CLAIMED, UNKNOWN]
+
     //Current/PRevious information of the Cargo. Helps the operator in determining the current state is OK.
     @Column(name = "last_known_location_id")
     @AttributeOverride(name = "unLocCode", column = @Column(name = "last_known_location_id"))
